@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customPurple"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="2"
+    tools:context="com.project.noxusfrosted.quicktest.IndexActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/friendProfilePicture"
+            android:layout_width="156dp"
+            android:layout_height="155dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="User Name"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/friendProfilePicture"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <TextView
+            android:id="@+id/testTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Please check your Internet connection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+
+        android:id="@+id/btnCreateQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="onCreateQuizBtn"
+        android:text="Create Quiz" />
+
+
+    <Button
+        android:id="@+id/btnDoQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="onDoQuizBtn"
+        android:text="Do Quiz" />
+
+    <Button
+
+        android:id="@+id/btnViewScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="onViewScoreBtn"
+        android:text="Score Board" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_red"
+        android:onClick="onLogoutBtn"
+        android:text="Log out" />
+
+
+</LinearLayout>

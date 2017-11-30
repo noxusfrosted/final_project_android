@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">QuickTest</string>
+    <string name="facebook_app_id">111012459673806</string>
+    <string name="fb_login_protocol_scheme">fb111012459673806</string>
+    <string name="create_question">Create Question</string>
+    <string name="question">Question :</string>
+    <string name="correct_answer">Correct Answer :</string>
+    <string name="incorrect_answer">Incorrect Answer :</string>
+    <string name="clear">Clear</string>
+    <string name="add_question">Add Question</string>
+    <string name="please_select_quiz">Please Select Quiz</string>
+    <string name="answer_3">answer 3</string>
+    <string name="answer_2">answer 2</string>
+    <string name="answer_4">answer 4</string>
+    <string name="answer_1">answer 1</string>
+    <string name="questionName">Question</string>
+    <string name="quiz_name">Quiz Name :</string>
+    <string name="current_score">Current Score</string>
+</resources>

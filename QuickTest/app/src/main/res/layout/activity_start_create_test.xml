@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="@color/customPurple"
+    tools:context="com.project.noxusfrosted.quicktest.StartCreateTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Create Quiz"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_button"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Name :"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/quizNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+        </LinearLayout>
+
+        <RadioGroup
+            android:checkedButton="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            >
+
+            <RadioButton
+                android:onClick="onQuestion5Check"
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5 Questions"
+                />
+
+            <RadioButton
+                android:onClick="onQuestion10Check"
+                android:id="@+id/question10"
+                android:text="10 Questions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_green"
+            android:id="@+id/btnStartAddQuestion"
+            android:onClick="onStartBtn"
+            android:text="Start to add question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_red"
+            android:id="@+id/btnBack"
+            android:onClick="onBackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back To Main Menu"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

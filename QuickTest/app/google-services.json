@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "588084616392",
+    "firebase_url": "https://quicktest-58040.firebaseio.com",
+    "project_id": "quicktest-58040",
+    "storage_bucket": "quicktest-58040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588084616392:android:fe14aa065f9724f2",
+        "android_client_info": {
+          "package_name": "com.project.noxusfrosted.quicktest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588084616392-bqndfjog7o94hfffs4tr3p3c8ritf05i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.noxusfrosted.quicktest",
+            "certificate_hash": "678f33438a461dac7d49166e4c0e64489c186b35"
+          }
+        },
+        {
+          "client_id": "588084616392-qf7vl6rp88j6dnf4bhc22j09ia1a2pqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaWJFYrmY6by5TliPck7oNa0FRVuciv-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588084616392-qf7vl6rp88j6dnf4bhc22j09ia1a2pqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

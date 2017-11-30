@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/customPurple"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/customPurple"
+        tools:context="com.project.noxusfrosted.quicktest.AddQuestionActivity">
+
+        <TextView
+            android:id="@+id/createTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/create_question"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/questionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct_answer"
+                android:textColor="@color/customTextGreen"
+                />
+
+            <EditText
+                android:id="@+id/correctAnswerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect_answer"
+                android:textColor="@color/customTextRed"
+                />
+
+            <EditText
+                android:id="@+id/incorrectEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect_answer"
+                android:textColor="@color/customTextRed"
+                />
+
+            <EditText
+                android:id="@+id/incorrectEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect_answer"
+                android:textColor="@color/customTextRed"
+                />
+
+            <EditText
+                android:id="@+id/incorrectEditText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            >
+
+
+            <Button
+                android:id="@+id/btnAddQuestion"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAddQuestionBtn"
+                android:text="@string/add_question" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClearBtn"
+                android:text="@string/clear">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
